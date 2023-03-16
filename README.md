@@ -1,6 +1,6 @@
 # What's My Ip React App
 
-## Write a React which relies on multiple APIs
+## Write a React App which relies on multiple APIs
 
 The goal of this project is to write a simple find my IP app in React by utilising different complimentary APIs.
 
@@ -10,11 +10,11 @@ The implementation of this website can be viewed [here](https://konstrukteur.git
 
 ![initial design](design.png)
 
-## API
+## APIs
 
-ipapi API [https://ipapi.co](https://ipapi.co)
-public-ip
-leaflet API [https://leafletjs.com](https://leafletjs.com)
+- ipapi API [https://ipapi.co](https://ipapi.co)
+- public-ip
+- leaflet API [https://leafletjs.com](https://leafletjs.com)
 
 ## Deployment on GitHub
 
