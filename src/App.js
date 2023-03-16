@@ -43,7 +43,7 @@ function App() {
   return (
     <div className='App'>
       {position && ip != undefined ? (
-        <Map position={position} />
+        <Map position={position} setIp={setIp} />
       ) : (
         "acquiring position ..."
       )}
