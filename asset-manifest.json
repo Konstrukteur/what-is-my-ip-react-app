@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/what-is-my-ip-react-app/static/css/main.3b372717.css",
+    "main.js": "/what-is-my-ip-react-app/static/js/main.a295bb5f.js",
+    "index.html": "/what-is-my-ip-react-app/index.html",
+    "main.3b372717.css.map": "/what-is-my-ip-react-app/static/css/main.3b372717.css.map",
+    "main.a295bb5f.js.map": "/what-is-my-ip-react-app/static/js/main.a295bb5f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b372717.css",
+    "static/js/main.a295bb5f.js"
+  ]
+}
