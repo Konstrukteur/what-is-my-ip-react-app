@@ -18,7 +18,6 @@ function App() {
   useEffect(() => {
     try {
       publicIpv4().then((response) => {
-        console.log("App IP 1st UE", response);
         setIp(response);
       });
     } catch (error) {
@@ -28,10 +27,8 @@ function App() {
 
   useEffect(() => {
     try {
-      console.log("App IP 2st UE", ip);
       fetch(`https://ipapi.co/${ip}/json/`).then((response) =>
         response.json().then((position) => {
-          console.log("App position 2.UE", position);
           setPosition(position);
         })
       );
@@ -42,7 +39,7 @@ function App() {
 
   return (
     <div className='App'>
-      {position && ip != undefined ? (
+      {position ? (
         <Map position={position} setIp={setIp} />
       ) : (
         "acquiring position ..."

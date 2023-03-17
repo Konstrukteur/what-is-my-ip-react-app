@@ -1,5 +1,4 @@
 const Label = ({ position }) => {
-  console.log("label", position);
   return (
     <div>
       <img src={`https://flagsapi.com/${position.country}/flat/64.png`} />

@@ -6,6 +6,13 @@ import SearchComponent from "./SearchComponent";
 import "leaflet/dist/leaflet.css";
 import icon from "../images/marker.svg";
 
+const RecenterMap = ({ latlong }) => {
+  const map = useMap();
+  map.closePopup();
+  map.setView(latlong, map.getZoom());
+  return null;
+};
+
 const Map = ({ position, setIp }) => {
   const positionIcon = L.icon({
     iconUrl: icon,
@@ -13,12 +20,10 @@ const Map = ({ position, setIp }) => {
     iconAnchor: [20, 40],
     popupAnchor: [0, 0],
   });
-  console.log("Map", position);
   const latlong = [position.latitude, position.longitude];
-  console.log("Map", latlong);
   return (
     <div className={"mapcontainer"}>
-      {position.latitude && (
+      {position.latitude && latlong && (
         <MapContainer center={latlong} zoom={15} scrollWheelZoom={false}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -31,6 +36,7 @@ const Map = ({ position, setIp }) => {
               <Label position={position} />
             </Popup>
           </Marker>
+          <RecenterMap latlong={latlong} />
         </MapContainer>
       )}
       <SearchComponent setIp={setIp} />
