@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/what-is-my-ip-react-app/static/css/main.56b38bab.css",
-    "main.js": "/what-is-my-ip-react-app/static/js/main.d452330f.js",
+    "main.js": "/what-is-my-ip-react-app/static/js/main.4cfa0055.js",
     "index.html": "/what-is-my-ip-react-app/index.html",
     "static/media/marker.svg": "/what-is-my-ip-react-app/static/media/marker.5e56c28ed5ce5da55b5cc7e4607a1036.svg",
     "main.56b38bab.css.map": "/what-is-my-ip-react-app/static/css/main.56b38bab.css.map",
-    "main.d452330f.js.map": "/what-is-my-ip-react-app/static/js/main.d452330f.js.map"
+    "main.4cfa0055.js.map": "/what-is-my-ip-react-app/static/js/main.4cfa0055.js.map"
   },
   "entrypoints": [
     "static/css/main.56b38bab.css",
-    "static/js/main.d452330f.js"
+    "static/js/main.4cfa0055.js"
   ]
 }
